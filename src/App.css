@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+/* 
 
 .App-logo {
   height: 40vmin;
@@ -34,5 +32,70 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+/* 
+.App {
+  color: red;
+  text-align: center;
+} */
+/* * {
+  box-sizing: border-box;
+} */
+#bg {
+  /* box-sizing: border-box; */
+  background-image: url('https://user-images.githubusercontent.com/33485020/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11.jpg');
+  height: 100vh;
+}
+#home-text {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+#thic {
+  color: red;
+  padding: 5%;
+  font-weight: bolder;
+}
+#btn {
+  padding: 5%;
+}
+#form {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+#button {
+  background-color: #e50914;
+  font-weight: bolder;
+  font-size: large;
+}
+#button:hover {
+  background-color: red;
+}
+#help:link {
+  color: white;
+  text-decoration: none;
+}
+#help:hover {
+  color: white;
+  text-decoration: underline;
+}
+#card {
+  background-color: black;
+  opacity: 85%;
+  margin: 80px;
+}
+#para {
+  margin-left: -3px;
+  /* margin-bottom: 100px;
+  padding-bottom: 15%; */
+}
+@media only screen and (min-width: 1200px) {
+  #center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -85px;
+    height: -10px;
+    /* background-image: url('https://cdn.pixabay.com/photo/2022/04/19/08/32/relax-7142183__480.jpg'); */
   }
 }

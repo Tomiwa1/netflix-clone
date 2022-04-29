@@ -42,6 +42,7 @@
 /* * {
   box-sizing: border-box;
 } */
+
 #bg {
   /* box-sizing: border-box; */
   background-image: url('https://user-images.githubusercontent.com/33485020/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11.jpg');
@@ -65,8 +66,8 @@
 }
 #button {
   background-color: #e50914;
-  font-weight: bolder;
-  font-size: large;
+  /* font-weight: bolder; */
+  /* font-size: large; */
 }
 #button:hover {
   background-color: red;
@@ -82,7 +83,7 @@
 #card {
   background-color: black;
   opacity: 85%;
-  margin: 80px;
+  margin: 85px;
 }
 #para {
   margin-left: -3px;
@@ -95,7 +96,30 @@
     align-items: center;
     justify-content: center;
     margin: -85px;
-    height: -10px;
+    height: -30px;
     /* background-image: url('https://cdn.pixabay.com/photo/2022/04/19/08/32/relax-7142183__480.jpg'); */
   }
 }
+#foot-home {
+  background-color: black;
+  opacity: 95%;
+  color: white;
+  margin-top: 200px;
+  padding: 3%;
+}
+#foot {
+  /* background-color: black; */
+  opacity: 50%;
+  /* color: white; */
+}
+#foot-sign {
+  background-color: black;
+  opacity: 95%;
+  margin-top: -80px;
+  padding: 5%;
+}
+/* #opac {
+  background-color: black;
+  opacity: 90%;
+  color: white;
+} */

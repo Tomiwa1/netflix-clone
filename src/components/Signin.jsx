@@ -2,9 +2,23 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 export class Signin extends Component {
+  // constructor(props) {
+  //   super(props);
+
+  //   this.state = {
+  //     email: '',
+  //     password: ''
+  //   };
+  // }
+
+  // onChange = (e) => {
+  //   this.setState({
+  //     email: e.target.value
+  //   });
+  // };
   render() {
     return (
-      <>
+      <div id="bg">
         <div className="container d-flex mx-auto" id="center">
           <div
             className="card   border-dark text-white   "
@@ -18,22 +32,37 @@ export class Signin extends Component {
                   type="email"
                   className="form-control bg-dark border-dark"
                   placeholder="Email"
+                  id="email"
+                  // value={this.email}
+                  // onChange={this.onChange}
+                  style={{ color: 'white' }}
                 />
               </div>
               <div className="input-group py-2" action="">
                 <input
                   type="password"
+                  id="password"
+                  // value={this.password}
+                  // onChange={this.onChange}
+                  style={{ color: 'white' }}
+                  placeholder="Password"
                   className="form-control bg-dark border-dark"
                 />
               </div>
-              <div className="d-grid gap-2 py-4">
-                <input
-                  type="button"
-                  value="Sign In"
-                  className="btn btn-danger"
-                  id="button"
-                />
-              </div>
+              <Link to="/movies" style={{ textDecoration: 'none' }}>
+                <div className="d-grid gap-2 py-4">
+                  <input
+                    type="button"
+                    value="Sign In"
+                    className="btn btn-danger"
+                    id="button"
+                  />
+                  {/* <button className="btn text-white" id="button">
+                    Sign In
+                  </button> */}
+                </div>
+              </Link>
+
               <div className="d-flex justify-content-start">
                 <input
                   type="checkbox"
@@ -151,7 +180,7 @@ export class Signin extends Component {
           </div>
           {/* </nav> */}
         </div>
-      </>
+      </div>
     );
   }
 }

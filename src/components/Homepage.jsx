@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Homepage extends Component {
   render() {
     return (
-      <>
+      <div id="bg">
         {/* SIGN-IN BUTTON */}
         <div className="position-absolute top-0 end-0" id="btn">
           <Link to="/sign-in">
@@ -39,9 +39,11 @@ class Homepage extends Component {
               />
             </div>
             <div className="col-12 py-5">
-              <button className="btn text-white" type="submit" id="button">
-                Get Started <i className="fas  fa-angle-right" />
-              </button>
+              <Link to="/movies">
+                <button className="btn text-white" type="submit" id="button">
+                  Get Started <i className="fas  fa-angle-right" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -126,7 +128,7 @@ class Homepage extends Component {
           </div>
           {/* </nav> */}
         </div>
-      </>
+      </div>
     );
   }
 }

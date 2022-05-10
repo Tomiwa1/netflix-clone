@@ -1,0 +1,16 @@
+/* .container {
+  max-width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+/* #arrow {
+  opacity: -70%;
+} */
+#img {
+  width: 180px;
+}
+#row {
+  /* display: flex; */
+  gap: 15px;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+}

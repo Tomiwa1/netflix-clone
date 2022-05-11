@@ -86,6 +86,17 @@
   opacity: 85%;
   margin: 85px;
 }
+@media only screen and (max-width: 712px) {
+  #card {
+    background-color: #e50914;
+    min-width: 50vw;
+  }
+  #right {
+    position: absolute;
+    left: 160px;
+    word-wrap: normal;
+  }
+}
 #para {
   margin-left: -3px;
   /* margin-bottom: 100px;

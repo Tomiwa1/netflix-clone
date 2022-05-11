@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 const MovieCard = ({ movie }) => {
   const imgPath = 'https://image.tmdb.org/t/p/w500';

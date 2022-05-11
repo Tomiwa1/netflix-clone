@@ -72,8 +72,8 @@ export class Signin extends Component {
                   value="Remember me"
                 />
                 <p className="opacity-50">Remember me</p>
-                <p className="position-absolute opacity-50 end-0">
-                  <a href="/" id="help">
+                <p className=" float-right" id="right">
+                  <a href="/" id="help" className=" text-dark mr-2">
                     Need Help?
                   </a>
                 </p>

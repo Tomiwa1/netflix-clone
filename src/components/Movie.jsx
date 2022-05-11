@@ -4,7 +4,7 @@ import MovieCard from './MovieCard';
 import axios from 'axios';
 import Jumbotron from './Jumbotron';
 import TvSeries from './TvSeries';
-import YouTube from 'react-youtube';
+// import YouTube from 'react-youtube';
 import ExcitingMovies from './ExcitingMovies';
 
 function Movie() {

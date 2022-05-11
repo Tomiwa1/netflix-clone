@@ -1,5 +1,5 @@
 import React from 'react';
-import YouTube from 'react-youtube';
+// import YouTube from 'react-youtube';
 
 function Jumbotron({ movie }) {
   const imgPath = 'https://image.tmdb.org/t/p/original';
@@ -13,10 +13,12 @@ function Jumbotron({ movie }) {
             // objectFit: '',
             // objectPosition: '100% 100%'
             backgroundImage: `url(${imgPath}${movie.backdrop_path})`,
+            backgroundColor: 'red',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'top-center'
           }}
+          id="jumboPhone"
         >
           <div className="text-white position-absolute bottom-0 start-0 py-5 px-5">
             {/* <YouTube /> */}

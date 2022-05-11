@@ -13,7 +13,6 @@ function Jumbotron({ movie }) {
             // objectFit: '',
             // objectPosition: '100% 100%'
             backgroundImage: `url(${imgPath}${movie.backdrop_path})`,
-            backgroundColor: 'red',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'top-center'

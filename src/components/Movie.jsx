@@ -14,22 +14,34 @@ function Movie() {
   const [exciting, setExciting] = useState([]);
   const [loading, setLoading] = useState(false);
   const [random, setRandom] = useState({});
+  const [show, setShow] = useState(false);
+  const [tvShow, setTvShow] = useState(false);
+  const [excitingShow, setExcitingShow] = useState(false);
+
   // const [selectMovies, setSelectMovies] = useState({});
   const [searchKey, setSearchKey] = useState('');
-  // SCROLLING THROUGH MOVIES
+  // SCROLLING THROUGH TRENDING MOVIES
   const movieScrollRight = () => {
+    setShow(true);
+
     document.getElementById('carousel').scrollLeft += 800;
   };
   const movieScrollLeft = () => {
     document.getElementById('carousel').scrollLeft -= 800;
   };
+  // SCROLLING THROUGH TV SERIES
+
   const filmScrollRight = () => {
+    setTvShow(true);
     document.getElementById('carousel2').scrollLeft += 800;
   };
   const filmScrollLeft = () => {
     document.getElementById('carousel2').scrollLeft -= 800;
   };
+  // SCROLLING THROUGH EXCITING MOVIES
   const excitingScrollRight = () => {
+    setExcitingShow(true);
+
     document.getElementById('carousel3').scrollLeft += 800;
   };
   const excitingScrollLeft = () => {
@@ -150,19 +162,21 @@ function Movie() {
             >
               <i className="fas fa-angle-right px-3 py-1 " />
             </button>
-            <button
-              className="bg-dark text-white"
-              style={{
-                position: 'absolute',
-                top: '100',
-                left: '0',
-                opacity: '50%',
-                height: '272px'
-              }}
-              onClick={movieScrollLeft}
-            >
-              <i className="fas fa-angle-left px-3 py-1 " />
-            </button>
+            {show ? (
+              <button
+                className="bg-dark text-white"
+                style={{
+                  position: 'absolute',
+                  top: '100',
+                  left: '0',
+                  opacity: '50%',
+                  height: '272px'
+                }}
+                onClick={movieScrollLeft}
+              >
+                <i className="fas fa-angle-left px-3 py-1 " />
+              </button>
+            ) : null}
           </div>
         </div>
         {/* TV SERIES */}
@@ -191,19 +205,21 @@ function Movie() {
             >
               <i className="fas fa-angle-right px-3 py-1 " />
             </button>
-            <button
-              className="bg-dark text-white"
-              style={{
-                position: 'absolute',
-                top: '100',
-                left: '0',
-                opacity: '50%',
-                height: '272px'
-              }}
-              onClick={filmScrollLeft}
-            >
-              <i className="fas fa-angle-left px-3 py-1 " />
-            </button>
+            {tvShow ? (
+              <button
+                className="bg-dark text-white"
+                style={{
+                  position: 'absolute',
+                  top: '100',
+                  left: '0',
+                  opacity: '50%',
+                  height: '272px'
+                }}
+                onClick={filmScrollLeft}
+              >
+                <i className="fas fa-angle-left px-3 py-1 " />
+              </button>
+            ) : null}
           </div>
         </div>
         {/* EXCITING MOVIES */}
@@ -234,19 +250,21 @@ function Movie() {
             >
               <i className="fas fa-angle-right px-3 py-1 " />
             </button>
-            <button
-              className="bg-dark text-white"
-              style={{
-                position: 'absolute',
-                top: '100',
-                left: '0',
-                opacity: '50%',
-                height: '272px'
-              }}
-              onClick={excitingScrollLeft}
-            >
-              <i className="fas fa-angle-left px-3 py-1 " />
-            </button>
+            {excitingShow ? (
+              <button
+                className="bg-dark text-white"
+                style={{
+                  position: 'absolute',
+                  top: '100',
+                  left: '0',
+                  opacity: '50%',
+                  height: '272px'
+                }}
+                onClick={excitingScrollLeft}
+              >
+                <i className="fas fa-angle-left px-3 py-1 " />
+              </button>
+            ) : null}
           </div>
         </div>
       </div>

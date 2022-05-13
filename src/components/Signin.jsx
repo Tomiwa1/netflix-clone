@@ -1,21 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-export class Signin extends Component {
-  // constructor(props) {
-  //   super(props);
-
-  //   this.state = {
-  //     email: '',
-  //     password: ''
-  //   };
-  // }
-
-  // onChange = (e) => {
-  //   this.setState({
-  //     email: e.target.value
-  //   });
-  // };
+class Signin extends Component {
   render() {
     return (
       <div id="bg">
@@ -66,17 +52,15 @@ export class Signin extends Component {
               <div className="d-flex justify-content-start">
                 <input
                   type="checkbox"
-                  name=""
-                  id=""
                   className="form-check-input"
                   value="Remember me"
                 />
                 <p className="opacity-50">Remember me</p>
-                <p className=" float-right" id="right">
-                  <a href="/" id="help" className=" text-dark mr-2">
+                {/* <p className=" float-right" id="right">
+                  <a href="/" id="help" className=" text-dark ">
                     Need Help?
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="py-5 d-flex justify-content-start m-3">

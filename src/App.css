@@ -39,18 +39,22 @@
 #card {
   background-color: black;
   opacity: 85%;
+  /* margin-bottom: 150px; */
+
   margin: 85px;
 }
-@media only screen and (max-width: 712px) {
+#right {
+}
+@media only screen and (max-width: 680px) {
   #card {
     /* background-color: #e50914; */
-    min-width: 70vw;
-    margin-left: 55px;
+    min-width: 80vw;
+    margin-left: 35px;
     margin-bottom: 120px;
   }
   #right {
     position: absolute;
-    left: 180px;
+    left: 200px;
     word-wrap: normal;
   }
 }

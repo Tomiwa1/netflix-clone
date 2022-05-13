@@ -15,7 +15,7 @@ function Jumbotron({ movie }) {
             backgroundImage: `url(${imgPath}${movie.backdrop_path})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            backgroundPosition: 'top-center'
+            backgroundPosition: 'center'
           }}
           id="jumboPhone"
         >

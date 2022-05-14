@@ -141,7 +141,7 @@ function Movie() {
           <h5 className="text-start">Trending now</h5>
           <div
             id="carousel"
-            className="d-flex gap-3 overflow-hidden"
+            className="d-flex gap-3 phone"
             style={{
               position: 'auto'
             }}
@@ -186,7 +186,7 @@ function Movie() {
           <h5>Tv series</h5>
           <div
             id="carousel2"
-            className="d-flex gap-3 overflow-hidden"
+            className="d-flex gap-3 phone"
             style={{
               position: 'auto'
             }}
@@ -231,7 +231,7 @@ function Movie() {
           <h5>Exciting movies</h5>
           <div
             id="carousel3"
-            className="d-flex gap-3 overflow-hidden"
+            className="d-flex gap-3 phone"
             style={{
               background: 'black',
               position: 'auto'
@@ -324,8 +324,8 @@ function Movie() {
       <div>
         <Jumbotron movie={random} />
       </div>
-      <div id="phone">
-        <div id="row" className="cotainer row ">
+      <div>
+        <div id="row" className="cotainer">
           {renderMovies()}
         </div>
       </div>

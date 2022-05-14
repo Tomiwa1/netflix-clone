@@ -158,6 +158,7 @@ function Movie() {
                 opacity: '50%',
                 height: '272px'
               }}
+              id="swipe"
               onClick={movieScrollRight}
             >
               <i className="fas fa-angle-right px-3 py-1 " />
@@ -172,6 +173,7 @@ function Movie() {
                   opacity: '50%',
                   height: '272px'
                 }}
+                id="swipe"
                 onClick={movieScrollLeft}
               >
                 <i className="fas fa-angle-left px-3 py-1 " />
@@ -201,6 +203,7 @@ function Movie() {
                 opacity: '50%',
                 height: '272px'
               }}
+              id="swipe"
               onClick={filmScrollRight}
             >
               <i className="fas fa-angle-right px-3 py-1 " />
@@ -215,6 +218,7 @@ function Movie() {
                   opacity: '50%',
                   height: '272px'
                 }}
+                id="swipe"
                 onClick={filmScrollLeft}
               >
                 <i className="fas fa-angle-left px-3 py-1 " />
@@ -246,6 +250,7 @@ function Movie() {
                 opacity: '50%',
                 height: '272px'
               }}
+              id="swipe"
               onClick={excitingScrollRight}
             >
               <i className="fas fa-angle-right px-3 py-1 " />
@@ -260,6 +265,7 @@ function Movie() {
                   opacity: '50%',
                   height: '272px'
                 }}
+                id="swipe"
                 onClick={excitingScrollLeft}
               >
                 <i className="fas fa-angle-left px-3 py-1 " />
@@ -294,25 +300,32 @@ function Movie() {
       {/* SEARCHING FOR MOVIES */}
       <form
         onSubmit={searchMovies}
-        className="position-absolute  end-0 py-4"
+        className="position-absolute  d-flex flex-column   end-0 py-4"
         style={{ marginTop: '40px' }}
       >
-        <input
-          type="text"
-          className="form-control-sm"
-          onChange={(e) => setSearchKey(e.target.value)}
-        />
-        <button type="submit" className="btn btn-outline-danger ">
-          Search
-        </button>
+        <div className="d-flex">
+          <input
+            type="text"
+            className="form-control "
+            onChange={(e) => setSearchKey(e.target.value)}
+            style={{ height: '35px' }}
+          />
+          <button
+            type="submit"
+            className="btn btn-outline-danger"
+            style={{ height: '35px', borderRadius: '0' }}
+          >
+            Search
+          </button>
+        </div>
         <div className="text-info">{searchKey}</div>
       </form>
       {/* SEARCHING FOR MOVIES END */}
       <div>
         <Jumbotron movie={random} />
       </div>
-      <div className="overflow-hidden">
-        <div id="row" className="cotainer row overflow-hidden">
+      <div id="phone">
+        <div id="row" className="cotainer row ">
           {renderMovies()}
         </div>
       </div>

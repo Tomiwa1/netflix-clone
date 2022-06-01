@@ -11,7 +11,7 @@ function Jumbotron({ movie }) {
             // width: '100vw',
             height: '100vh',
             // objectFit: '',
-            // objectPosition: '100% 100%'
+
             backgroundImage: `url(${imgPath}${movie.backdrop_path})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
